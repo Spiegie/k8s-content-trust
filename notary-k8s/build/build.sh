@@ -30,6 +30,7 @@ docker build -t $REGISTRY/notary-mariadb:$NOTARY_TAG --build-arg NOTARYPKG=$NOTA
 docker push $REGISTRY/notary-signer:$NOTARY_TAG
 docker push $REGISTRY/notary-server:$NOTARY_TAG
 docker push $REGISTRY/notary-migrate:$NOTARY_TAG
+docker push $REGISTRY/notary-mariadb:$NOTARY_TAG
 
 # remove container and image
 docker rm -f $ID
